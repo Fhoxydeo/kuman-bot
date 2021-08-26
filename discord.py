@@ -1,14 +1,17 @@
-# discord.py
-import os
-
+#kuman
 import discord
-from dotenv import load_dotenv
+from discord.ext import commands
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-
-client = discord.Client()
+#prefix
+client = commands.Bot(command_prefix = ' ! ')
 
 @client.event
 async def on_ready():
-    print(f'{client.user} has connected to Discord!')
+    print('Bot is ready')
+
+@client.command()
+async def ping():
+    await client.say('Pong!')
+
+client.run('ODc0MTgxMzkwOTYxMzUyNzI1.YRDO3Q.5-tDgnuFGOhiyeX6-wtKzo2e1KE')
+
