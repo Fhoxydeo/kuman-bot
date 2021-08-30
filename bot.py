@@ -47,6 +47,5 @@ async def aib(ctx):
 
 
 #Token
-client.run('TOKEN
-')
+client.run('TOKEN')
 
