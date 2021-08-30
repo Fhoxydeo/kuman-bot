@@ -50,7 +50,15 @@ async def bob(ctx):
     responses = ['https://media.discordapp.net/attachments/881901579991658516/881901786531786752/image1-2.jpg?width=355&height=473',
                 'https://media.discordapp.net/attachments/881901579991658516/881901786875703346/image1-1.jpg?width=355&height=473',
                 'https://media.discordapp.net/attachments/881901579991658516/881901787223818270/image0-4.jpg?width=355&height=473',
-                'https://media.discordapp.net/attachments/881901579991658516/881901787546800178/image0-3.jpg?width=355&height=473',]
+                'https://media.discordapp.net/attachments/881901579991658516/881901787546800178/image0-3.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881901787920097280/image0-1.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881901788326952970/image0.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903241024114729/hskskbb.jpg?width=630&height=472',
+                'https://media.discordapp.net/attachments/881901579991658516/881903241485504592/IMG_20210223_161604.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903241833635890/image1-1.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903242349522965/image1.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903242672492555/image0.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903243075153992/IMG_20210223_161536.jpg?width=355&height=473',]
     await ctx.send(f'{random.choice(responses)}')    
 
 
