@@ -44,6 +44,14 @@ async def aib(ctx):
     await ctx.send(f'{random.choice(responses)}')
 
 
+#Bob si kucing    
+@client.command()
+async def bob(ctx):
+    responses = ['https://media.discordapp.net/attachments/881901579991658516/881901786531786752/image1-2.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881901786875703346/image1-1.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881901787223818270/image0-4.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881901787546800178/image0-3.jpg?width=355&height=473',]
+    await ctx.send(f'{random.choice(responses)}')    
 
 
 #Token
