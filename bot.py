@@ -58,7 +58,19 @@ async def bob(ctx):
                 'https://media.discordapp.net/attachments/881901579991658516/881903241833635890/image1-1.jpg?width=355&height=473',
                 'https://media.discordapp.net/attachments/881901579991658516/881903242349522965/image1.jpg?width=355&height=473',
                 'https://media.discordapp.net/attachments/881901579991658516/881903242672492555/image0.jpg?width=355&height=473',
-                'https://media.discordapp.net/attachments/881901579991658516/881903243075153992/IMG_20210223_161536.jpg?width=355&height=473',]
+                'https://media.discordapp.net/attachments/881901579991658516/881903243075153992/IMG_20210223_161536.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903243347767317/IMG_20210223_161627.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903243725262918/IMG_20210223_161545.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903244119531631/image0-1.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903244467638272/iakaknsdb.jpg?width=630&height=472',
+                'https://media.discordapp.net/attachments/881901579991658516/881903466337951795/IMG_20210223_161652.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903466660888596/IMG_20210223_161638.jpg?width=417&height=472',
+                'https://media.discordapp.net/attachments/881901579991658516/881903466887385140/IMG_20210223_161644.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903467239727154/IMG_20210223_162206.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903467592024074/IMG_20210223_162222.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903467852087417/IMG_20210223_163040.jpg?width=354&height=472',
+                'https://media.discordapp.net/attachments/881901579991658516/881903468128923698/IMG_20210223_161830.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/881903468384755722/IMG_20210223_161955.jpg?width=355&height=473',]
     await ctx.send(f'{random.choice(responses)}')    
 
 
