@@ -14,10 +14,7 @@ async def on_ready():
 #commands
 @client.command()
 async def ping(ctx):
-    await ctx.send(f'Berak! {round(client.latency * 1000)}ms, '):
-        if (client.latency < 100)
-        print('Lantjar ngatjeng'):
-            else (print('Ngelek'))
+    await ctx.send(f'Berak! {round(client.latency * 1000)}ms, ngelek mas')
 
 @client.command()
 async def rules(ctx):
