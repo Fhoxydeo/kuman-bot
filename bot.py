@@ -31,7 +31,6 @@ async def crot(ctx):
 
 @client.command()
 async def rushia(ctx):
-
     await ctx.send('bacot')
     
 #kumpulan aib
