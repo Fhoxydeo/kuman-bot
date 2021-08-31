@@ -29,8 +29,9 @@ async def berak(ctx):
 async def crot(ctx):
     await ctx.send('crat crot crat crot, brisik, bodoh, stop coli, stop menghabiskan sperma dalam tubuhmu biar kamu tidak mati lemas karena hipotensi, kunjungi website ini bila anda mengalami gejala hipotensi https://www.alodokter.com/hipotensi')
 
-@client.command(ctx)
-async def rushia
+@client.command()
+async def rushia(ctx):
+
     await ctx.send('bacot')
     
 #kumpulan aib
