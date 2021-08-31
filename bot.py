@@ -31,8 +31,7 @@ async def crot(ctx):
 
 @client.command()
 async def rushia(ctx):
-    await ctx.send('bacot',
-                   'https://tenor.com/view/wide-vladimir-putin-russian-walking-gif-17506944')
+    await ctx.send('bacot https://tenor.com/view/wide-vladimir-putin-russian-walking-gif-17506944')
     
 #kumpulan aib
 @client.command()
