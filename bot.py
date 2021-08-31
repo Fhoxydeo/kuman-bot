@@ -92,5 +92,5 @@ async def bob(ctx):
 
 
 #Token
-client.run('DISCORD_TOKEN')
+client.run(['DISCORD_TOKEN'])
 
