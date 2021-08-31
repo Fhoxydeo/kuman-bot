@@ -75,10 +75,10 @@ async def bob(ctx):
                 'https://media.discordapp.net/attachments/881901579991658516/881903467592024074/IMG_20210223_162222.jpg?width=355&height=473',
                 'https://media.discordapp.net/attachments/881901579991658516/881903467852087417/IMG_20210223_163040.jpg?width=354&height=472',
                 'https://media.discordapp.net/attachments/881901579991658516/881903468128923698/IMG_20210223_161830.jpg?width=355&height=473',
-                'https://media.discordapp.net/attachments/881901579991658516/881903468384755722/IMG_20210223_161955.jpg?width=355&height=473'
+                'https://media.discordapp.net/attachments/881901579991658516/881903468384755722/IMG_20210223_161955.jpg?width=355&height=473',
                 'https://media.discordapp.net/attachments/881901579991658516/881903468657401976/IMG_20210223_161855.jpg?width=355&height=473',
                 'https://media.discordapp.net/attachments/881901579991658516/881903468988727337/IMG_20210223_163035.jpg?width=355&height=473',
-                'https://media.discordapp.net/attachments/881901579991658516/881903873084768296/IMG_20210223_163417.jpg?width=354&height=472'
+                'https://media.discordapp.net/attachments/881901579991658516/881903873084768296/IMG_20210223_163417.jpg?width=354&height=472',
                 'https://media.discordapp.net/attachments/881901579991658516/881903873382572062/IMG_20210223_163429.jpg?width=354&height=472',
                 'https://media.discordapp.net/attachments/881901579991658516/881903873751666688/IMG_20210223_163107.jpg?width=354&height=472',
                 'https://media.discordapp.net/attachments/881901579991658516/881903874015920168/IMG_20210223_163151.jpg?width=355&height=473',
