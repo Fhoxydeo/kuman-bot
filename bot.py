@@ -1,6 +1,7 @@
 #system shit idk
 import discord
 import random
+import os
 from discord.ext import commands
 
 #prefix
@@ -92,5 +93,5 @@ async def bob(ctx):
 
 
 #Token
-client.run(['DISCORD_TOKEN'])
+client.run(os.environ['DISCORD_TOKEN'])
 
