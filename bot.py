@@ -88,7 +88,9 @@ async def bob(ctx):
                 'https://media.discordapp.net/attachments/881901579991658516/881903875278405682/IMG_20210223_163134.jpg?width=354&height=472',
                 'https://media.discordapp.net/attachments/881901579991658516/881903875496476742/IMG_20210223_163339.jpg?width=354&height=472',
                 'https://media.discordapp.net/attachments/881901579991658516/881903875899138058/IMG_20210223_163131.jpg?width=355&height=473',
-                'https://media.discordapp.net/attachments/881901579991658516/881904117965004810/unknown.png?width=272&height=300',]
+                'https://media.discordapp.net/attachments/881901579991658516/881904117965004810/unknown.png?width=272&height=300',
+                'https://media.discordapp.net/attachments/556916767423987732/871917122232655892/image0.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/556916767423987732/871910827119243294/image0.jpg?width=630&height=472',]
     await ctx.send(f'{random.choice(responses)}')    
 
 
