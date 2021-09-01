@@ -51,7 +51,8 @@ async def aib(ctx):
                 'https://media.discordapp.net/attachments/880497088989896704/881817391347163146/Screenshot_2021-03-26-22-24-29-76.png?width=474&height=119',
                 'https://media.discordapp.net/attachments/880497088989896704/881817504819867658/Screenshot_2021-03-10-22-48-45-58_572064f74bd5f9fa804b05334aa4f912.jpg?width=506&height=473',
                 'https://media.discordapp.net/attachments/880497088989896704/881817950066188288/Screenshot_2021-02-27-22-34-24-26.png?width=368&height=139',
-                'https://media.discordapp.net/attachments/880497088989896704/881818095390437386/unknown-4.png?width=240&height=29', ]
+                'https://media.discordapp.net/attachments/880497088989896704/881818095390437386/unknown-4.png?width=240&height=29',
+                'https://media.discordapp.net/attachments/880497088989896704/882583714197012520/unknown.png?width=1024&height=226', ]
     await ctx.send(f'{random.choice(responses)}')
 
 
