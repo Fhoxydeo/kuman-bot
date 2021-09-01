@@ -109,7 +109,10 @@ async def myako(ctx):
                 'https://media.discordapp.net/attachments/699567935861162037/882475090535657552/IMG_20210513_093157.jpg',
                 'https://media.discordapp.net/attachments/699567935861162037/882475091001237554/IMG_20210330_104528.jpg', ]
     await ctx.send(f'{random.choice(responses)}')
-
+@client.command()
+async def roll(ctx):
+    responses = [1-9]
+    await ctx.send(f'{random.choice(responses)}')
 
 #Token
 client.run(os.environ['DISCORD_TOKEN'])
