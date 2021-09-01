@@ -99,6 +99,17 @@ async def bob(ctx):
                 'https://media.discordapp.net/attachments/556916767423987732/871910827119243294/image0.jpg?width=630&height=472',]
     await ctx.send(f'{random.choice(responses)}')    
 
+#myako nya nya
+@client.command()
+async def myako(ctx):
+    responses = ['https://media.discordapp.net/attachments/699567935861162037/882475088321073172/IMG_20210829_192439.jpg',
+                'https://media.discordapp.net/attachments/699567935861162037/882475089684221952/IMG_20210615_102627.jpg',
+                'https://media.discordapp.net/attachments/699567935861162037/882475088799211571/IMG_20210815_222629.jpg', 
+                'https://media.discordapp.net/attachments/699567935861162037/882475090057511043/IMG_20210618_230009.jpg',
+                'https://media.discordapp.net/attachments/699567935861162037/882475090535657552/IMG_20210513_093157.jpg',
+                'https://media.discordapp.net/attachments/699567935861162037/882475091001237554/IMG_20210330_104528.jpg', ]
+    await ctx.send(f'{random.choice(responses)}')
+
 
 #Token
 client.run(os.environ['DISCORD_TOKEN'])
