@@ -140,6 +140,11 @@ async def myako(ctx):
                 'https://media.discordapp.net/attachments/699567935861162037/882475091001237554/IMG_20210330_104528.jpg', ]
     await ctx.send(f'{random.choice(responses)}')
 
+#random angka judi mamak kau green
+@client.command()
+async def roll(ctx):
+    await ctx.send(f'(random.sample(range(10, 30)))
+
 
 #Token
 client.run(os.environ['DISCORD_TOKEN'])
