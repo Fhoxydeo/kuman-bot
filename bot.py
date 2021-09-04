@@ -143,9 +143,9 @@ async def myako(ctx):
 #random angka judi mamak kau green
 @client.command()
 async def roll(ctx):
-    await ctx.send(f'{random.sample(range(1, 99)}')
-
-
+    await ctx.send(f'{random.sample(range(1, 99))}')
+    
+    
 #Token
 client.run(os.environ['DISCORD_TOKEN'])
 
