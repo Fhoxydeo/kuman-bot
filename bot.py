@@ -15,7 +15,7 @@ async def on_ready():
 #commands
 @client.command()
 async def ping(ctx):
-    await ctx.send(f'Berak! {round(client.latency * 1000)}ms, ngelek mas')
+    await ctx.send(f'Servernya {round(client.latency * 1000)}ms, {round(api.latency * 1000)}ms, ngelek mas')
 
 @client.command()
 async def rules(ctx):
@@ -138,13 +138,7 @@ async def myako(ctx):
                 'https://media.discordapp.net/attachments/699567935861162037/882475090057511043/IMG_20210618_230009.jpg',
                 'https://media.discordapp.net/attachments/699567935861162037/882475090535657552/IMG_20210513_093157.jpg',
                 'https://media.discordapp.net/attachments/699567935861162037/882475091001237554/IMG_20210330_104528.jpg', ]
-    await ctx.send(f'{random.choice(responses)}')
-
-#random angka judi mamak kau green
-@client.command()
-async def roll(ctx):
-    await ctx.send(f'{random.sample(range(1, 99))}')
-    
+    await ctx.send(f'{random.choice(responses)}')   
     
 #Token
 client.run(os.environ['DISCORD_TOKEN'])
