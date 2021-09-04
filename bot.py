@@ -52,7 +52,8 @@ async def aib(ctx):
                 'https://media.discordapp.net/attachments/880497088989896704/881817504819867658/Screenshot_2021-03-10-22-48-45-58_572064f74bd5f9fa804b05334aa4f912.jpg?width=506&height=473',
                 'https://media.discordapp.net/attachments/880497088989896704/881817950066188288/Screenshot_2021-02-27-22-34-24-26.png?width=368&height=139',
                 'https://media.discordapp.net/attachments/880497088989896704/881818095390437386/unknown-4.png?width=240&height=29',
-                'https://media.discordapp.net/attachments/880497088989896704/882583714197012520/unknown.png?width=1024&height=226', ]
+                'https://media.discordapp.net/attachments/880497088989896704/882583714197012520/unknown.png?width=1024&height=226',
+                'https://media.discordapp.net/attachments/803233395021709312/883577978813030431/IMG_20210902_203200.jpg?width=648&height=151', ]
     await ctx.send(f'{random.choice(responses)}')
 
 
@@ -97,7 +98,35 @@ async def bob(ctx):
                 'https://media.discordapp.net/attachments/881901579991658516/881903875899138058/IMG_20210223_163131.jpg?width=355&height=473',
                 'https://media.discordapp.net/attachments/881901579991658516/881904117965004810/unknown.png?width=272&height=300',
                 'https://media.discordapp.net/attachments/556916767423987732/871917122232655892/image0.jpg?width=355&height=473',
-                'https://media.discordapp.net/attachments/556916767423987732/871910827119243294/image0.jpg?width=630&height=472',]
+                'https://media.discordapp.net/attachments/556916767423987732/871910827119243294/image0.jpg?width=630&height=472',
+                'https://media.discordapp.net/attachments/881901579991658516/883525228624490496/image0-6.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525228976828477/image0-7.jpg?width=355&height=473', 
+                'https://media.discordapp.net/attachments/881901579991658516/883525229299785768/image2.jpg?width=630&height=472', 
+                'https://media.discordapp.net/attachments/881901579991658516/883525229719207937/image0-8.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525230444826634/image0-9.jpg?width=355&height=473', 
+                'https://media.discordapp.net/attachments/881901579991658516/883525230843265034/image0-10.jpg?width=355&height=473', 
+                'https://media.discordapp.net/attachments/881901579991658516/883525231229149194/image6.jpg?width=355&height=473', 
+                'https://media.discordapp.net/attachments/881901579991658516/883525231682146345/image0-16.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525232055422986/image0-17.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525232495853598/image1-3.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525360652804147/image0-13.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525360950575134/image0-12.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525361256763442/image0-14.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525361739124736/image0-15.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525362074673172/image0-19.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525362406006824/image1-4.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525362900930610/image0-21.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525363223920690/image1-5.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525363551055894/image4.jpg?width=330&height=472',
+                'https://media.discordapp.net/attachments/881901579991658516/883525363861446666/image1-6.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525430324363324/image0-18.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525430878023731/image0-20.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525431389724672/image1-7.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525432283115560/image0-25.jpg?width=630&height=472',
+                'https://media.discordapp.net/attachments/881901579991658516/883525432614481941/image0-27.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525433168126022/image0-23.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525433499484210/image0-24.jpg?width=355&height=473',
+                'https://media.discordapp.net/attachments/881901579991658516/883525433923104839/image0-29.jpg?width=355&height=473',]
     await ctx.send(f'{random.choice(responses)}')    
 
 #myako nya nya
