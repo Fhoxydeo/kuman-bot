@@ -10,8 +10,8 @@ client = commands.Bot(command_prefix = '.')
 #on ready
 @client.event
 async def on_ready():
-    print('Berak Bos')
-    
+    print('{0.user} has Berak '.format(client))
+
 #commands
 @client.command()
 async def ping(ctx):
@@ -55,7 +55,6 @@ async def aib(ctx):
                 'https://media.discordapp.net/attachments/880497088989896704/882583714197012520/unknown.png?width=1024&height=226',
                 'https://media.discordapp.net/attachments/803233395021709312/883577978813030431/IMG_20210902_203200.jpg?width=648&height=151', ]
     await ctx.send(f'{random.choice(responses)}')
-
 
 #Bob si kucing    
 @client.command()
