@@ -140,12 +140,14 @@ async def myako(ctx):
                 'https://media.discordapp.net/attachments/699567935861162037/882475091001237554/IMG_20210330_104528.jpg', ]
     await ctx.send(f'{random.choice(responses)}')   
 
+@client.command()
+async def say(ctx, *,arg):
+    await ctx.send(arg)
 
-@client.command
-async def roll(ctx):
-    computer = random.randint(1,1000)
-    await ctx.send("You roll {}".format(computer))
+@client.command()
+async def gaplok(ctx, members: commands.Greedy[discord.Member], *, reason='no reason'):
+    slapped = ", ".join(x.name for x in members)
+    await ctx.send("{} just got gaplok'd for {}".format(slapped, reason))
 
 #Token
 client.run(os.environ['DISCORD_TOKEN'])
-
