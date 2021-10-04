@@ -188,4 +188,8 @@ async def snipe(ctx):
         await ctx.send(f"There are no recently deleted messages in #{channel.name}")
 
 #Token
+<<<<<<< HEAD
 client.run(os.environ['DISCORD_TOKEN'])
+=======
+client.run(os.environ['DISCORD_TOKEN'])
+>>>>>>> 308254beaa86e225c07536e33cdf26e941e72374
