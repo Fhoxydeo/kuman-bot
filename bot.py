@@ -167,4 +167,4 @@ async def gaplok(self, ctx, user:discord.Member):
         await ctx.send(embed=em, files=[file])
 
 #Token
-client.run('ODc0MTgxMzkwOTYxMzUyNzI1.YRDO3Q.c8bqeTkvsH01VoHUegq8oRXf3Ws')
+client.run(os.environ['DISCORD_TOKEN'])
