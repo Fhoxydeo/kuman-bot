@@ -51,9 +51,10 @@ async def aib(ctx):
                 'https://media.discordapp.net/attachments/880497088989896704/881817391347163146/Screenshot_2021-03-26-22-24-29-76.png?width=474&height=119',
                 'https://media.discordapp.net/attachments/880497088989896704/881817504819867658/Screenshot_2021-03-10-22-48-45-58_572064f74bd5f9fa804b05334aa4f912.jpg?width=506&height=473',
                 'https://media.discordapp.net/attachments/880497088989896704/881817950066188288/Screenshot_2021-02-27-22-34-24-26.png?width=368&height=139',
-                'https://media.discordapp.net/attachments/880497088989896704/881818095390437386/unknown-4.png?width=240&height=29',
-                'https://media.discordapp.net/attachments/880497088989896704/882583714197012520/unknown.png?width=1024&height=226',
-                'https://media.discordapp.net/attachments/803233395021709312/883577978813030431/IMG_20210902_203200.jpg?width=648&height=151', ]
+                'https://media.discordapp.net/attachments/880497088989896704/881818095390437386/unknown-4.png',
+                'https://media.discordapp.net/attachments/880497088989896704/882583714197012520/unknown.png',
+                'https://media.discordapp.net/attachments/803233395021709312/883577978813030431/IMG_20210902_203200.jpg',
+                'https://media.discordapp.net/attachments/803233395021709312/868510856613355580/Screenshot_2021-07-24-19-04-04-40_572064f74bd5f9fa804b05334aa4f912.jpg', ]
     await ctx.send(f'{random.choice(responses)}')
 
 #Bob si kucing    
@@ -136,7 +137,11 @@ async def myako(ctx):
                 'https://media.discordapp.net/attachments/699567935861162037/882475088799211571/IMG_20210815_222629.jpg', 
                 'https://media.discordapp.net/attachments/699567935861162037/882475090057511043/IMG_20210618_230009.jpg',
                 'https://media.discordapp.net/attachments/699567935861162037/882475090535657552/IMG_20210513_093157.jpg',
-                'https://media.discordapp.net/attachments/699567935861162037/882475091001237554/IMG_20210330_104528.jpg', ]
+                'https://media.discordapp.net/attachments/699567935861162037/882475091001237554/IMG_20210330_104528.jpg',
+                'https://media.discordapp.net/attachments/803233395021709312/872112477209526332/IMG_20210802_182942.jpg',
+                'https://media.discordapp.net/attachments/803233395021709312/867748887674617856/IMG_20210722_194356.jpg',
+                'https://media.discordapp.net/attachments/803233395021709312/864842120211857418/20210714_191342.jpg?',
+                'https://media.discordapp.net/attachments/803233395021709312/886926973413232640/IMG_20210913_175036.jpg', ]
     await ctx.send(f'{random.choice(responses)}')   
 
 @client.command()
@@ -144,9 +149,22 @@ async def say(ctx, *,arg):
     await ctx.send(arg)
 
 @client.command()
-async def gaplok(ctx, members: commands.Greedy[discord.Member], *, reason='no reason'):
-    slapped = ", ".join(x.name for x in members)
-    await ctx.send("{} just got gaplok'd for {}".format(slapped, reason))
+async def gaplok(self, ctx, user:discord.Member):
+        cmd_user = ctx.message.author
+        if not user:
+            user = cmd_user
+
+        if cmd_user.id == user.id:
+            desc = 'Why do you do this to yourself?'
+        else:
+            desc = f"{cmd_user.mention} gaplok'd {user.mention}!"
+
+        react_filepath = self._get_reaction_in_folder('slap')
+        file, url = self._get_reaction_info(react_filepath)
+
+        em = discord.Embed(description=desc, colour=cmd_user.colour)
+        em.set_image(url=url)
+        await ctx.send(embed=em, files=[file])
 
 #Token
-client.run(os.environ['DISCORD_TOKEN'])
+client.run('ODc0MTgxMzkwOTYxMzUyNzI1.YRDO3Q.c8bqeTkvsH01VoHUegq8oRXf3Ws')
