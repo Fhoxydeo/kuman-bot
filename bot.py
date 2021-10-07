@@ -54,7 +54,8 @@ async def aib(ctx):
                 'https://media.discordapp.net/attachments/880497088989896704/881818095390437386/unknown-4.png',
                 'https://media.discordapp.net/attachments/880497088989896704/882583714197012520/unknown.png',
                 'https://media.discordapp.net/attachments/803233395021709312/883577978813030431/IMG_20210902_203200.jpg',
-                'https://media.discordapp.net/attachments/803233395021709312/868510856613355580/Screenshot_2021-07-24-19-04-04-40_572064f74bd5f9fa804b05334aa4f912.jpg', ]
+                'https://media.discordapp.net/attachments/803233395021709312/868510856613355580/Screenshot_2021-07-24-19-04-04-40_572064f74bd5f9fa804b05334aa4f912.jpg', 
+                'https://media.discordapp.net/attachments/880497088989896704/895593649772036126/unknown-2.png', ]
     await ctx.send(f'{random.choice(responses)}')
 
 #Bob si kucing    
