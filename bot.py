@@ -181,4 +181,4 @@ async def roll(ctx):
     await ctx.send(random.randrange(1, 99))
 
 #Token
-client.run('ODc0MTgxMzkwOTYxMzUyNzI1.YRDO3Q.upfvXsd8IMFs5BH_NoGSUglL4YQ')
+client.run(os.environ['DISCORD_TOKEN'])
