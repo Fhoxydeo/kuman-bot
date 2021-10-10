@@ -4,6 +4,9 @@ import random
 import os
 from discord.ext import commands
 
+snipe_message_author = {}
+snipe_message_content = {}
+
 #prefix
 client = commands.Bot(command_prefix = '.')
 
@@ -150,25 +153,10 @@ async def say(ctx, *,arg):
     await ctx.send(arg)
 
 @client.command()
-async def gaplok(self, ctx, user:discord.Member):
-        cmd_user = ctx.message.author
-        if not user:
-            user = cmd_user
+async def gaplok(ctx, members: commands.Greedy[discord.Member], *, reason='no reason'):
+    slapped = ", ".join(x.name for x in members)
+    await ctx.send("{} just got gaplok'd for {}".format(slapped, reason))
 
-        if cmd_user.id == user.id:
-            desc = 'Why do you do this to yourself?'
-        else:
-            desc = f"{cmd_user.mention} gaplok'd {user.mention}!"
-
-        react_filepath = self._get_reaction_in_folder('slap')
-        file, url = self._get_reaction_info(react_filepath)
-
-        em = discord.Embed(description=desc, colour=cmd_user.colour)
-        em.set_image(url=url)
-        await ctx.send(embed=em, files=[file])
-
-snipe_message_author = {}
-snipe_message_content = {}
 
 @client.event
 async def on_message_delete(message):
@@ -181,12 +169,16 @@ async def on_message_delete(message):
 @client.command(name = 'snipe')
 async def snipe(ctx):
     channel = ctx.channel
-    try: #This piece of code is run if the bot finds anything in the dictionary
+    try: 
         em = discord.Embed(name = f"Last deleted message in #{channel.name}", description = snipe_message_content[channel.id])
         em.set_footer(text = f"This message was sent by {snipe_message_author[channel.id]}")
         await ctx.send(embed = em)
-    except: #This piece of code is run if the bot doesn't find anything in the dictionary
+    except: 
         await ctx.send(f"There are no recently deleted messages in #{channel.name}")
 
+@client.command()
+async def roll(ctx):
+    await ctx.send(random.randrange(1, 99))
+
 #Token
-client.run(os.environ['DISCORD_TOKEN'])
+client.run('ODc0MTgxMzkwOTYxMzUyNzI1.YRDO3Q.upfvXsd8IMFs5BH_NoGSUglL4YQ')
