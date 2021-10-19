@@ -92,6 +92,3 @@ class cat(commands.Cog):
                     'https://media.discordapp.net/attachments/803233395021709312/864842120211857418/20210714_191342.jpg?',
                     'https://media.discordapp.net/attachments/803233395021709312/886926973413232640/IMG_20210913_175036.jpg', ]
         await ctx.send(f'{random.choice(responses)}')   
-
-def setup(client):
-    client.add_cog(cat(client))
