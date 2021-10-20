@@ -24,6 +24,11 @@ class general(commands.Cog):
 
     @commands.command()
     async def say(self, ctx, *,arg):
+        amount = 1
+        try:
+            amount = int(arg)
+        except Exception: pass
+        await ctx.channel.purge(limit=amount)      
         await ctx.send(arg)
 
     @commands.command()
